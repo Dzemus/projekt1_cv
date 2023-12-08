@@ -1,128 +1,176 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
-
-    <form action="" method="get">
-        <div>
-        <label for="">Imię</label>
-        <input type="text" name="" id="">
-        </div>
-
-        <div>
-        <label for="">Nazwisko</label>
-        <input type="text" name="" id="">
-        </div>
-
-        <div>
-        <label for="">Hasło</label>
-        <input type="password" name="" id="">
-        </div>
-
-        <div> 
-        <label for="">Email</label>
-        <input type="email" name="" id="">
-        </div>
-
-        <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-        </select>
-        <input type="submit" value="Wyślij">
-        <button type="submit">Wyślij</button>
-
-    </form>
-
-
-
-
-
-
-
-<a href="https://google.pl" target="_blank">Google</a>
-<a href="index.html" target="_parent">Plik</a>
-<a href="#sekcja">Przejdź do sekcji</a>
-<a href="halohalo@halo.pl">email@email.pl</a>
-<a href="tel:123456789">Telefon</a>
-<a href="https://google.pl" target="_self">Otwórz plik jpg</a>
-<a href="https://google.pl" target="_top">Otwórz plik jpg</a>
-<a href="https://google.pl" target="_parent">Plik</a>
-
-
-
-
-
-
 <style>
-    span,
-    div {
-        width: 40px;
-        height: 40px;
-        margin: 10px;
-        background-color: blue;
-    }
+       /* .triangle {
+      width: 0;
+      height: 0;
+      border-top: 100px solid #000;
+      border-right: 80px solid transparent;
+      border-bottom: 80px solid transparent;
+      top: 100px;
+        }*/
 </style>
-
-<span>Jan Kowalski</span>
-<div>Jan Kowalski</div>
-
-<hr>
-
-<div>Jan Kowalski</div>
-<div>Jan Kowalski</div>
-
-<ul>
-    <li>Jan Kowalski</li>
-    <li>Jan Kowalski</li>
-    <li>Jan Kowalski</li>
-    <li>Jan Kowalski</li>
-</ul>
-
-<ol>
-    <li>Ala Ala</li>
-    <li>Ala Ala</li>
-    <li>Ala Ala</li>
-    <li>Ala Ala</li>
-</ol>
-
-
-<table>
-    <thead>
-        <th>Lp.</th>
-        <th>Imię</th>
-        <th>Nazwisko</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Jan</td>
-            <td>Kowalski</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Ola</td>
-            <td>Maj</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Maciek</td>
-            <td>Styczeń</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Kamil</td>
-            <td>Ślimak</td>
-    </tr>
-    </tbody>
-</table>
-
- <script src="src/js/script.js"></script>
+<body>
+    <div class="container">
+        <div class="row flex flex-row flex-column-m">
+            <div class="col-left hero-img col-left-bg">
+                <img src="src/img/jan-kowalski.jpg" alt="">
+            </div>
+            <div class="col-right hero-header col-right-bg">
+                <h1>Linda <span style="font-weight: bold;">Sharedan</span></h1>
+                <h2><span style="font-weight: bold;">IT</span> Specialist</h2>
+            </div>
+        </div>
+        <div class="row flex flex-row flex-column-m">
+            <div class="col-left col-left-bg">
+                <div class="contact">
+                    <span class="h3 col-left-title">Contact</span>
+                    <div class="contact-wrapper">
+                        <div class="row flex flex-row align-items jc-space-around">
+                            <span class="circle">
+                                <i class="fa-solid fa-phone cv-left-i"></i>
+                            </span>
+                            <div class="phone">
+                                <a href="tel:123456789">tel:123456789</a>
+                            </div>
+                        </div>
+                        <div class="row flex flex-row align-items jc-space-around">
+                            <span class="circle">
+                                <i class="fa-solid fa-house cv-left-i"></i>
+                            </span>
+                            <div class="address">
+                                <p>
+                                    90-123 Gdańsk, <br>
+                                    ul. Długa 1
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row flex flex-row align-items jc-space-around">
+                            <span class="circle">
+                                <i class="fa-solid fa-globe cv-left-i"></i>
+                            </span>
+                            <div class="website">
+                                <a href="https://google.pl">website.com</a>
+                            </div>
+                        </div>
+                        <div class="row flex flex-row align-items jc-space-around">
+                            <span class="circle">
+                                <i class="fa-solid fa-envelope cv-left-i"></i>
+                            </span>
+                            <div class="email">
+                                <a href="mailto:email@email.pl">email@email.pl</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <span class="h3 col-left-title">Hobbies</span>
+                    <div class="hobby-wrapper flex flex-row">
+                        <span class="circle">
+                            <i class="fa-solid fa-plane"></i>
+                        </span>
+                        <span class="circle">
+                            <i class="fa-solid fa-futbol"></i>
+                        </span>
+                        <span class="circle">
+                            <i class="fa-solid fa-music"></i>
+                        </span>
+                        <span class="circle">
+                            <i class="fa-solid fa-film"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="skills">
+                    <span class="h3 col-left-title">Skills</span>
+                    <ul class="skills-list">
+                        <li>Lorem ipsum dolor Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor Lorem ipsum dolor</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ch-position col-right vol-right-bg">
+                <div class="aboutme">
+                    <div class="title-bg">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="h3 col-right-title">About Me</span>
+                    </div>
+                    <p class="descripiton">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequatur exercitationem, quas eveniet facilis amet natus, ullam, explicabo aliquid aliquam esse dolorem unde eligendi dolor. Repellendus quasi distinctio odio at.
+                        Rerum consectetur, eos dignissimos earum atque, ab asperiores velit temporibus voluptate impedit molestias voluptas labore hic quae. Nesciunt voluptate officiis a possimus ratione similique, incidunt necessitatibus deleniti excepturi magnam ipsam?
+                        Sapiente voluptatem molestias atque quaerat optio, adipisci nihil voluptate quasi temporibus dolorem culpa voluptatibus omnis, neque ullam, impedit fuga odio necessitatibus possimus! Officiis qui architecto consectetur! Vitae magnam optio error.
+                    </p>
+                </div>
+                <div class="education">
+                    <div class="title-bg">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="h3 col-right-title">Education</span>
+                    </div>
+                    <!-- 1 pozycja w sekcji edukacja -->
+                    <div class="item flex flex-row flex-wrap">
+                        <div class="item-date">2017-2018</div>
+                        <div class="item-position">Information Commu Tech</div>
+                        <div class="item-name">Masteral School of Houston</div>
+                        <div class="item-description"></div>
+                    </div>
+                    <!-- 2 pozycja w sekcji edukacja -->
+                    <div class="item flex flex-row flex-wrap">
+                        <div class="item-date">2014-2017</div>
+                        <div class="item-position">Major in IT</div>
+                        <div class="item-name">University of Houston</div>
+                        <div class="item-description"></div>
+                    </div>
+                    <!-- 3 pozycja w sekcji edukacja -->
+                    <div class="item flex flex-row flex-wrap">
+                        <div class="item-date">2012-2014</div>
+                        <div class="item-position">Vocational Information Tech</div>
+                        <div class="item-name">Technological School of Texas</div>
+                        <div class="item-description"></div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="title-bg">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span class="h3 col-right-title">Work experience</span>
+                    </div>
+                    <!-- 1 pozycja w sekcji doświadczenie -->
+                    <div class="item flex flex-row flex-wrap">
+                        <div class="item-date">Present</div>
+                        <div class="item-position">Head IT Specialist</div>
+                        <div class="item-name">Assecco Poland Sp. z o.o.</div>
+                        <div class="item-description"></div>
+                    </div>
+                    <!-- 2 pozycja w sekcji doświadczenie -->
+                    <div class="item">
+                        <div class="item-date flex flex-row flex-wrap">2019-2020</div>
+                        <div class="item-position">Team Leader</div>
+                        <div class="item-name">Hexagon co..</div>
+                        <div class="item-description"></div>
+                    </div>
+                    <!-- 3 pozycja w sekcji doświadczenie -->
+                    <div class="item flex flex-row flex-wrap">
+                        <div class="item-date">2002-2019</div>
+                        <div class="item-position">xxxxx</div>
+                        <div class="item-name">cxcxzcxzcz</div>
+                        <div class="item-description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
